@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TacoCat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <title>FizzBuzz</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+    
+      <body>
+    
+          <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #353636">
+              <a class="navbar-brand" href="index.html">FizzBuzz</a>
+              <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation"></button>
+              <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="index.html"></i>Solve </a>
+                      </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://youssef-asaad.netlify.app/" target = "_blank"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/youssefkhasaad/TacoCat" target="_blank"><i class=""></i>GitHub</a>
+                    </li>
+                  </ul>
+              </div>
+          </nav>
+
+  <!-- Jumbotron section-->
+  <header>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container d-flex flex-column align-items-center aos-init aos-animate"
+    data-aos= "zoom-in"data-aos-delay= "100">
+      <h1 class="display-3">Taco Cat</h1>
+      <br>
+      <div class="row mb-0">
+        <div class="col">
+      <p class="lead">Find out if a word or number is a palindrome<br>"it reads the same backward as forward"</p>
+      <hr class="my-2">
+    </div>
+  </div>
+  </div>
+  </div>
+  </header>
+
+<!-- This is where I lay out the UI for the exercise -->
+<div class="container text-center pt-2">
+    <div class="row">
+        <div class="col-4 offset-4">
+            <input type="text" placeholder="Enter Your Word" class="form-control" id="input">
+        </div>
+      </div>
+    </div>
+    <br>
+      <div class="row text-center">
+        <div class="col-4 offset-4">
+            <button id="btnWord" class="btn btn btn-secondary " data-toggle="modal" data-target="#myModal">Click Me</button>
+            <button id="btnClear" class="btn btn btn-secondary ">Clear</button>
+        </div>        
+</div>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+
+<div class="modal fade" id="myModal" tabindex="" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">TacoCat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">   
+            <p id="reverseUserWord" style="font-weight:bold"></p>        
+            <p id="answer" style="font-weight:bold"></p>         
+      </div>
+      
+      <div class="modal-footer"> 
+        <button type="button" class="btn btn btn-secondary btnWide " data-dismiss="modal">Back</button>       
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+  </body>
+</html>
